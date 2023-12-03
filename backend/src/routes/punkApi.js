@@ -24,7 +24,10 @@ function verifyToken(req, res, next) {
 // Rota protegida com autenticação JWT para obter dados da Punk API
 router.get('/beers', verifyToken, async (req, res) => {
   try {
-    const response = await axios.get('https://api.punkapi.com/v2/beers');
+    const page = req.query.page || 1; // Página padrão é 1 se não for especificada
+    const perPage = req.query.per_page || 6; // Itens por página padrão é 6 se não for especificado
+
+    const response = await axios.get(`https://api.punkapi.com/v2/beers?page=${page}&per_page=${perPage}`);
     res.json(response.data);
   } catch (error) {
     console.error(error);

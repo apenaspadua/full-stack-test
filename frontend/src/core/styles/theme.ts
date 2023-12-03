@@ -1,10 +1,13 @@
 export const theme = {
   colors: {
-    primary: '#24292f',
+    primary: '#020203',
     secondary: '#FAB717',
     white: '#ffffff',
     placeholder: '#B4B9C7',
-    error: 'red'
+    inputColor: '#ECECEC',
+    error: 'red',
+    toastError: '#FFEBF0',
+    shadowError: '#FF465A33',
   },
 
   fonts: {

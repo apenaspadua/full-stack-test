@@ -1,21 +1,22 @@
+import { theme } from 'core/styles/theme';
 import { StyleSheet } from 'react-native';
  
 export default StyleSheet.create({
+  texts: {
+    marginHorizontal: 20
+  },
   content: {
     flex: 1,
-    backgroundColor: 'red'
+    top: '5%',
+    backgroundColor: theme.colors.white,
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40,
+    paddingVertical: 50,
+    paddingHorizontal: 20
   },
-  animated: {
-    height: '100%'
-  },
-  image: {
-    width: 220,
-    height: 70,
-    top: 40
-  },
-  footer: {
-    position: 'absolute', 
-    bottom: 0, 
-    alignSelf: 'center'
+  forgotPass: {
+    alignSelf: 'flex-end',
+    marginTop: 5,
+    marginBottom: 24    
   }
 });

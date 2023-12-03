@@ -1,6 +1,6 @@
+import { theme } from 'core/styles/theme';
 import React from 'react';
 import { Text as TextRN, TextStyle } from 'react-native';
-import { theme } from 'global/styles/theme';
 
 interface TextProps {
   children: any,
@@ -8,7 +8,8 @@ interface TextProps {
   regular?: boolean; 
   bold?: boolean;
   space?: boolean;
-  style?: TextStyle
+  style?: TextStyle;
+  color?: string;
 }
 
 const Text: React.FC<TextProps> = ({
@@ -17,14 +18,15 @@ const Text: React.FC<TextProps> = ({
   regular = false,
   bold = false,
   space,
+  color,
   style
 }) => {
   const textStyle: TextStyle = {
-    fontSize: title ? 24 : regular ? 16 : 18,
+    fontSize: title ? 32 : regular ? 16 : 18,
     fontFamily: bold ? theme.fonts.text700 : regular ? theme.fonts.text400 : theme.fonts.text500,
-    color: theme.colors.white,
+    color: color || theme.colors.primary,
     lineHeight: title ? 31 : 21,
-    marginTop:  space ? 5 : 0,
+    marginTop:  space ? 12 : 5,
     ...style,
   };
 

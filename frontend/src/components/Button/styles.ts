@@ -1,17 +1,17 @@
-import { theme } from 'global/styles/theme';
+import { theme } from 'core/styles/theme';
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   button: {
     flexDirection: 'row',
-    backgroundColor: theme.colors.secondary,
+    backgroundColor: theme.colors.primary,
     height: 56,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 12,
+    borderRadius: 40,
     alignSelf: 'center',
   },
   label: {
-    color: theme.colors.primary,
+    color: theme.colors.white,
   }
 });

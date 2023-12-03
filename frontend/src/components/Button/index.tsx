@@ -1,7 +1,7 @@
-import Text from 'components/Text';
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import { styles } from './styles';
+import Text from 'components/Text';
 
 interface ButtonProps {
   label: string;
@@ -12,7 +12,8 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ label, width, onPress }) => {
   return (
     <TouchableOpacity 
-      style={[styles.button, { width: width || '90%' }]
+      onPress={onPress}
+      style={[styles.button, { width: width || '100%' }]
     }>
       <Text bold style={styles.label}>{label}</Text>
     </TouchableOpacity>
