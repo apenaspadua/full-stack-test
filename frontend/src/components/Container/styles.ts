@@ -6,6 +6,6 @@ export default StyleSheet.create({
   },
   content: {
     flex: 1,
-    marginVertical: Platform.OS === 'android' ? 20 : 0
+    marginTop: Platform.OS === 'android' ? 20 : 0
   }
 });
