@@ -55,6 +55,33 @@ node app.js
 
 O backend estará rodando em http://localhost:3000.
 
+## Rotas do Usuário
+
+Criar usuário:
+```bash
+/user/register
+```
+Obter um usuário pelo ID:
+```bash
+/user/:userId
+```
+Atualizar informações do usuário:
+```bash
+/user/:userId
+```
+Excluir um usuário:
+```bash
+/user/:userId
+```
+Obter todos os usuários:
+```bash
+/user
+```
+Autenticar usuário e obter token JWT:  
+```bash
+/user/login
+```
+
 ## Instalação e Configuração do Frontend (React Native Expo)
 
 1. Instale o Expo CLI globalmente.
@@ -87,6 +114,21 @@ const api = axios.create({
 
 ```bash
 npx expo start
+```
+
+## Build para produção
+É preciso ter uma conta Expo autorizada. (Não tenho na minha conta pessoal)
+
+1. Instale o EAS
+   
+```bash
+npm i eas-cli
+```
+
+2. Execute o comando para criar as buils para produção:
+
+```bash
+eas build -p all
 ```
 
 ## App 
