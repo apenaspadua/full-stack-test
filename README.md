@@ -89,12 +89,8 @@ const api = axios.create({
 npx expo start
 ```
 
-## Imagens 
-<img src="https://github.com/apenaspadua/full-stack-test/blob/master/images/Simulator%20Screenshot%20-%20iPhone%2011%20-%202023-12-03%20at%2020.57.40.png">
-<img src="https://github.com/apenaspadua/full-stack-test/blob/master/images/Simulator%20Screenshot%20-%20iPhone%2011%20-%202023-12-03%20at%2020.57.44.png">
+## App 
 <img src="https://github.com/apenaspadua/full-stack-test/blob/master/images/Simulator%20Screenshot%20-%20iPhone%2011%20-%202023-12-03%20at%2020.58.06.png">
-<img src="https://github.com/apenaspadua/full-stack-test/blob/master/images/Simulator%20Screenshot%20-%20iPhone%2011%20-%202023-12-03%20at%2020.58.21.png">
-
 
 ## Contributing
 @apenaspadua
